@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oe_search/responsive/color.dart';
 import 'package:oe_search/responsive/mobile_screen_layout.dart';
 import 'package:oe_search/responsive/responsive_layout.dart';
 import 'package:oe_search/responsive/web_screen_layout.dart';
@@ -16,9 +17,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Oe Search',
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black,
-      ),
+      theme:
+          ThemeData.dark().copyWith(scaffoldBackgroundColor: backgroundColor),
       home: const ResponsiveLayoutScreen(
         mobileScreenLayout: MobileScreenLayout(),
         webScreenLayout: WebScreenLayout(),
